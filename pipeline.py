@@ -17,8 +17,7 @@ Each phase must include:
 - prerequisites
     """
     result = profile_agent.run(task_input=prompt)
-    return result.text  # 👈 qui è la magia
-
+    return result.text  # 👈 IMPORTANT
 
 
 def gather_resources(roadmap: str) -> str:
@@ -32,8 +31,7 @@ Provide 2-3 courses, 1-2 books/articles, 1-2 GitHub repos per phase.
 Use the web search tool if needed to find updated resources.
     """
     result = resources_agent.run(task_input=prompt)
-    return result.text
-
+    return result.text  # 👈 IMPORTANT
 
 
 def create_study_plan(roadmap: str, resources: str) -> str:
@@ -55,8 +53,7 @@ Each block must include:
 - one mini-project
     """
     result = planner_agent.run(task_input=prompt)
-    return result.text
-
+    return result.text  # 👈 IMPORTANT
 
 
 def run_pipeline(user_profile: str, target_role: str):
@@ -65,8 +62,9 @@ def run_pipeline(user_profile: str, target_role: str):
     plan = create_study_plan(roadmap, resources)
 
     return {
-        "roadmap": roadmap,      # string
-        "resources": resources,  # string
-        "study_plan": plan,      # string
+        "roadmap": roadmap,
+        "resources": resources,
+        "study_plan": plan,
     }
+
 

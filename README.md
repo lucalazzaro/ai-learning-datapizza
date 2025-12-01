@@ -48,7 +48,7 @@ ai-learning-datapizza
 └── .env.example
 
 🔧 Installation
-git clone https://github.com/your-user/ai-learning-datapizza
+git clone https://github.com/lucalazzaro/ai-learning-datapizza
 cd ai-learning-datapizza
 pip install -r requirements.txt
 cp .env.example .env
