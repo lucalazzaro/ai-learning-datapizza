@@ -1,0 +1,4 @@
+datapizza-ai==0.0.9
+python-dotenv>=1.0.0
+duckduckgo-search>=7.0.0
+

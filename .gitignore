@@ -1,0 +1,40 @@
+# --- Python cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual environment ---
+.venv/
+venv/
+env/
+
+# --- Environment variables ---
+.env
+.env.*
+
+# --- Editor / OS files ---
+.DS_Store
+Thumbs.db
+
+# --- Logs / temp ---
+*.log
+*.tmp
+*.swp
+*.bak
+
+# --- Python build files ---
+build/
+dist/
+*.egg-info/
+
+# --- Jupyter / notebooks (in caso li aggiungi) ---
+.ipynb_checkpoints/
+
+# --- MyPy / tools ---
+.mypy_cache/
+.pytest_cache/
+
+# --- VS Code ---
+.vscode/
+
+# --- Datapizza cache (se usato) --
